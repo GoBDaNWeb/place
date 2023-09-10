@@ -10,9 +10,16 @@
     "@types/node": "^16.18.50",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "compose-function": "^3.0.3",
+    "framer-motion": "^10.16.4",
+    "mobx": "^6.10.2",
+    "mobx-react-lite": "^4.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-svg": "^16.1.24",
+    "sass": "^1.66.1",
+    "swiper": "^10.2.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -39,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/compose-function": "^0.0.31"
   }
 }

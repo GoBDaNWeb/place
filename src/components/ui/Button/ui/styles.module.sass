@@ -1,0 +1,95 @@
+
+
+.button.primary
+    background: var(--surface-quaternary-color)
+    color: var(--text-secondary-color)
+    border: 1px solid var(--surface-quaternary-color)
+    border-radius: var(--rounded-xl)
+    &:hover
+        background: var(--surface-primary-color)
+        color: var(--text-primary-color)
+        border-color: var(--surface-primary-color)
+        svg
+            path
+                fill: var(--text-primary-color)
+.button.secondary
+    background: none
+    color: var(--text-secondary-color)
+    border: 1px solid var(--surface-primary-color)
+    border-radius: var(--rounded-xl)
+    &:hover
+        background: var(--surface-primary-color)
+        color: var(--text-primary-color)
+        border-color: var(--surface-primary-color)
+        svg
+            path
+                fill: var(--text-primary-color)
+.button.large
+    padding: 1rem 2rem
+.button.outline
+    border: 1px solid var(--white-color)
+    border-radius: var(--rounded-xl)
+    background: none 
+.button.fill
+    color: var(--black-color)
+    border: 1px solid var(--white-color)
+    border-radius: var(--rounded-xl)
+    background: var(--white-color)
+    &:hover
+        opacity: .6
+.button.roundedPrimary.small
+    width: 54px
+    height: 54px
+.button.roundedPrimary
+    display: flex
+    align-items: center
+    justify-content: center
+    background: var(--surface-quaternary-color)
+    color: var(--text-secondary-color)
+    border: 1px solid var(--surface-quaternary-color)
+    border-radius: var(--rounded-full)
+    &:hover
+        background: var(--surface-primary-color)
+        color: var(--text-primary-color)
+        border-color: var(--surface-primary-color)
+        svg
+            path
+                fill: var(--text-primary-color)
+.button.roundedSecondary.small
+    width: 54px
+    height: 54px
+.button.roundedSecondary
+    display: flex
+    align-items: center
+    justify-content: center
+    background: none
+    color: var(--text-secondary-color)
+    border: 1px solid var(--surface-primary-color)
+    border-radius: var(--rounded-full)
+    svg
+        path
+            fill: var(--text-secondary-color)
+    &:hover
+        background: var(--surface-primary-color)
+        color: var(--text-primary-color)
+        border-color: var(--surface-primary-color)
+        svg
+            path
+                fill: var(--text-primary-color)
+
+
+    
+
+.button
+    display: flex
+    align-items: center
+    gap: 4px
+    color: var(--white-color)
+    font-size: 1rem
+    padding: .4rem 1rem
+    text-align: center
+    transition: all var(--trs-500)
+    cursor: pointer
+    svg
+        path
+            transition: all var(--trs-500)
