@@ -1,11 +1,12 @@
-import { useSwiper } from "swiper/react";
+import { useSwiperSlide } from "swiper/react";
 
 import styles from "./styles.module.sass";
 
 const SectionThreeText = () => {
-  const swiper = useSwiper();
+  const slide = useSwiperSlide();
 
-  const activeClass = swiper?.activeIndex >= 2 ? styles.active : "";
+  const activeClass = slide?.isActive || slide?.isPrev ? styles.active : "";
+
   return (
     <p className={`${activeClass} ${styles.sectionThreeText}`}>
       <span className={styles.wordWrapper}>

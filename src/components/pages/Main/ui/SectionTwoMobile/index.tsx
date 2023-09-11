@@ -19,7 +19,7 @@ const SectionTwoMobile = () => {
           поражают воображение.
         </p>
         <div className={styles.imageWrapper}>
-          <img src={bg} alt="section-2" />
+          <img src={bg} alt="section-2" loading="lazy" />
         </div>
       </div>
     </div>

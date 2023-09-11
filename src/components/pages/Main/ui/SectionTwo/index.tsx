@@ -25,7 +25,13 @@ const SectionTwo = () => {
     >
       <div className={styles.lineLeft} />
       <div className={styles.imageWrapper}>
-        <img ref={ref} src={bg} className={activeClass} alt="section-2" />
+        <img
+          ref={ref}
+          src={bg}
+          className={activeClass}
+          alt="section-2"
+          loading="lazy"
+        />
       </div>
       <div className={styles.lineRight} />
       <span className={styles.wordWrapper}>

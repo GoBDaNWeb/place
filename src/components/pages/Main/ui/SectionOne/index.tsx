@@ -60,6 +60,13 @@ const SectionOne = () => {
     hoveredRight ? styles.active : ""
   } ${isViewClass}`;
 
+  const leftPartClass = `${styles.leftPart} ${
+    delay === 2000 ? styles.disabled : ""
+  }`;
+  const rightPartClass = `${styles.rightPart} ${
+    delay === 2000 ? styles.disabled : ""
+  }`;
+
   return (
     <section ref={ref} className={`${styles.section} ${isActiveClass}`}>
       <HeroLogo />
@@ -68,9 +75,7 @@ const SectionOne = () => {
       <div
         onMouseEnter={() => handleHover("left")}
         onClick={() => handleHover("left")}
-        className={`${styles.leftPart} ${
-          delay === 2000 ? styles.disabled : ""
-        }`}
+        className={leftPartClass}
       >
         <div
           style={{ transitionDelay: `${delay}ms` }}
@@ -81,9 +86,7 @@ const SectionOne = () => {
       <div
         onMouseEnter={() => handleHover("right")}
         onClick={() => handleHover("right")}
-        className={`${styles.rightPart} ${
-          delay === 2000 ? styles.disabled : ""
-        }`}
+        className={rightPartClass}
       >
         <div
           style={{ transitionDelay: `${delay}ms` }}

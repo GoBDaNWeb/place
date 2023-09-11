@@ -1,13 +1,13 @@
-import { useSwiper } from "swiper/react";
+import { useSwiperSlide } from "swiper/react";
 
 import styles from "./styles.module.sass";
 
 import SectionThreeText from "../SectionThreeText";
 
 const SectionThree = () => {
-  const swiper = useSwiper();
+  const slide = useSwiperSlide();
 
-  const activeClass = swiper?.activeIndex >= 2 ? styles.active : "";
+  const activeClass = slide?.isActive || slide?.isPrev ? styles.active : "";
 
   return (
     <section className={`${styles.section} ${activeClass}`}>

@@ -1,6 +1,9 @@
 import { observer } from "mobx-react-lite";
 import { useStores } from "shared/context";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import styles from "./styles.module.sass";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 import menu from "../images/menu.jpg";
 import { Button } from "components/ui/Button";
@@ -16,7 +19,7 @@ const Menu = () => {
   return (
     <div className={menuClass}>
       <div className={styles.leftPart}>
-        <img src={menu} alt="menu" />
+        <img src={menu} alt="menu" loading="lazy" />
       </div>
       <div className={styles.rightPart}>
         <ul>

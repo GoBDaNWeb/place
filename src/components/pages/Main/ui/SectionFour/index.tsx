@@ -17,7 +17,7 @@ const SectionFour = () => {
         <div className={styles.quotsWrapper}>
           <QuotsIcon />
         </div>
-        <img src={barman} alt="barman" />
+        <img src={barman} alt="barman" loading="lazy" />
         <SectionFourText />
         <div className={styles.barmanName}>
           <h4>Artem Ten</h4>
